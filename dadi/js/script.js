@@ -1,13 +1,13 @@
-// Chiedi all’utente la sua email,
+// Gioco dei dadi, chi fa di più vince
 
-// controlla che sia nella lista di chi può accedere,
+var giocatoreUno = parseInt(prompt('inserisci un numero da 1 a 10'));
+var giocatoreDue = Math.floor(Math.random() * 9) + 1;
 
-// stampa un messaggio appropriato
-
-
-
-var nomiEmail = ['giuseppearimatea10@gmail.com','giuseppearimatea11@gmail.com','giuseppearimatea12@gmail.com','giuseppearimatea13@gmail.com','giuseppearimatea14@gmail.com','giuseppearimatea15@gmail.com'];
-
-for (var i = 0; i < nomiEmail.length; i++) {
-  console.log(nomiEmail);
-}
+  if (giocatoreUno > giocatoreDue) {
+    console.log('ha vinto giocatore uno');
+  }
+  else if (giocatoreDue < giocatoreUno) {
+    console.log('ha vinto giocatore due');
+  } else {
+    console.log('parità');
+  }
