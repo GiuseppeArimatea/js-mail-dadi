@@ -6,7 +6,7 @@ var giocatoreDue = Math.floor(Math.random() * 9) + 1;
   if (giocatoreUno > giocatoreDue) {
     console.log('ha vinto giocatore uno');
   }
-  else if (giocatoreDue < giocatoreUno) {
+  else if (giocatoreDue > giocatoreUno) {
     console.log('ha vinto giocatore due');
   } else {
     console.log('parità');

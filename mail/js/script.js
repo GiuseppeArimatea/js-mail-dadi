@@ -12,8 +12,7 @@ console.log(nomiEmail);
 for (var i = 0; i < nomiEmail.length; i++) {
   if (inserisciEmail == nomiEmail[i] ) {
     console.log(inserisciEmail + 'puoi accedere');
-  }
-  else if (inserisciEmail != nomiEmail[i]) {
+  } else {
     console.log('non puoi accedere')
   }
 }
